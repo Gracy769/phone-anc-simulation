@@ -1,0 +1,3 @@
+scenario,app_latency_ms,primary_lead_ms,secondary_delay_ms,noise_rms,residual_rms,reduction_db
+app_2ms,2,5,1,0.982667311865438,0.142803995485779,16.7533230192681
+app_20ms,20,5,1,0.982667311865438,0.572790770958557,4.68820995583944
