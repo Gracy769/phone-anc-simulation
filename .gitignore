@@ -1,3 +1,7 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+ltspice/*.db
+ltspice/*.net
+ltspice/*.op.raw
+ltspice/*.log.raw

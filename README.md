@@ -14,6 +14,8 @@ Study whether a phone application could reduce outside sound heard through ordin
 | `anc_simulation.m` | Matching MATLAB model and visual outputs |
 | `anc_interactive.m` | Live MATLAB slider demonstration of timing and phase |
 | `interactive_preview.png` | Screenshot of the interactive MATLAB window |
+| `ltspice/phone_anc_timing.asc` | LTspice schematic with RC mic input and stepped app delay |
+| `ltspice/phone_anc_preview.png` | Labeled preview of LTspice simulation traces |
 | `requirements.txt` | Python packages |
 | `results/01_signal_flow.png` | Labeled box diagram |
 | `results/02_waveform_and_learning.png` | Noise, residual, and learning curves |
@@ -84,9 +86,9 @@ Therefore a software-only **simulation** is valid for this project, while a univ
 4. Show `03_timing_sensitivity.png`: explain why phase accuracy worsens as frequency rises.
 5. State the two key practical barriers: unpredictable phone routing delay and no ear-pressure feedback sensor.
 
-## Why there is no LTspice file
+## LTspice demonstration
 
-LTspice models analog circuits. This project is specifically a phone software simulation with no hardware changes, so the digital acoustic/control model in Python and MATLAB is the relevant simulation. An LTspice op-amp circuit would describe a different project.
+Open [`ltspice/README.md`](ltspice/README.md) for the LTspice schematic, saved plot setup, measurements, and explanation. It adds a real RC microphone input and models the acoustic and app paths with behavioral sources. It is a teaching simulation of timing and phase, not a circuit to install in a phone.
 
 ## References
 
