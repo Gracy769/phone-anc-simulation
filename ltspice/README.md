@@ -2,6 +2,8 @@
 
 Open `phone_anc_timing.asc` in LTspice and click **Run**. The saved plot settings in `phone_anc_timing.plt` display noise and antinoise in the upper pane and the remaining pressure at the ear in the lower pane. LTspice runs two steps: `AppDelay=2m` and `AppDelay=20m`.
 
+The long source equations are hidden on the schematic so the component labels remain readable. Right-click a `B` source to inspect or edit its expression.
+
 The microphone reference contains a 100 Hz tone plus a smaller 430 Hz tone. `Cmic=1 uF` and `Rbias=33 kΩ` form a real analog high-pass input stage (cutoff about 4.8 Hz). The following behavioral blocks represent acoustic travel, an idealized inverting gain stage, the phone plus earphone delay, and the sum at the ear. **One circuit volt represents one unit of normalized acoustic pressure.** These blocks explain the timing requirement; they are not a proposed modification to phone hardware.
 
 | Parameter | Value | Meaning |
